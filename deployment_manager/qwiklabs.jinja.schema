@@ -1,0 +1,18 @@
+## qwicklabs.jinja.schema
+
+info:
+  title: Deploy a Simple VM
+  author: qwiklabs@google.com
+
+required:
+  - zone
+  - metadata-from-file
+
+properties:
+  metadata-from-file:
+    type: object
+    description: Key is metadata key, value is import file containing metadata value.
+  zone:
+    description: Zone to create the resources in.
+    type: string
+
